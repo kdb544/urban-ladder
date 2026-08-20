@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+    .name-row {
+    display: flex;
+    gap: 10px;
+                }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="form.html" method="post">
+        <fieldset>
+            <legend>Shipping Details</legend>
+                <div class="name-row" width: auto;>
+                        
+                    <div>    
+                        <label for="title">Title:</label><br>
+                        <select id="title" name="title">
+                        <option value="mr">Mr.</option>
+                        <option value="mrs">Mrs.</option>
+                        <option value="ms">Ms.</option>
+                        <option value="dr">Dr.</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="fname" value="Albert">
+                    </div>
+                    <div>
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Einstein">
+                    </div>
+                </div class="name-row">
+                <div>
+                    <div>
+                        <label for="adress">Address:</label><br>
+                        <input type="text" id="adress" name="adress" value="Zurcih, 34 Robel Flats">
+                    </div>
+                </div>
+                <div class="name-row">
+                    <div>
+                        <label for="country">Country:</label><br>
+                        <select id="country" name="country">
+                            <option value="usa">USA</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">UK</option>
+                            <option value="india">India</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="zip">Zip Code:</label><br>
+                        <input type="text" id="zip" name="zip" value="94300">
+                    </div>
+                </div>
+        </fieldset>
+
+    <p><br></p>
+
+        <fieldset>
+            <legend>Payment info</legend>
+                <div>
+                        <label for="cname">Cardholder name</label><br>
+                        <input type="text" id="cname" name="cname" value="Albert Einstein">
+                </div>
+                <div>
+                        <label for="cnum"> Card Number</label><br>
+                        <input type="text" id="cnum" name="cnum" value="9888 1212 3453 4546">
+                </div>
+                <div class="name-row">
+                    <div>
+                            <label for="exp_date">Expiry Date</label><br>
+                            <input type="month" id="exp_date" name="exp_date" >
+                    </div>
+                    <div>
+                            <label for="scode">Security Code</label><br>
+                            <input type="text" id="scode" name="scode" value="242">
+                    </div>
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>

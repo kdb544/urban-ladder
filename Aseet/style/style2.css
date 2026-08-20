@@ -1,0 +1,55 @@
+.top-bar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0 65px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+.device-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.device-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.device-icons span {
+    height: 40px;
+    width: 1px;
+    background: #aaa;
+}
+
+.message {
+    margin-left: 100px;
+    font-size: 24px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.read-more {
+    margin-left: 35px;
+    font-size: 22px;
+    color: #333;
+}
+
+.edit-btn {
+    margin-left: 40px;
+    background: #171717;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 35px;
+    font-size: 20px;
+}

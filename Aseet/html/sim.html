@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <style>
+            .tab_1
+                {
+                color:green;
+                text-align:center;
+                }
+            .tab2
+                {
+                text-align: center;
+                }
+
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                margin:auto;
+                }
+
+            td, th {
+                height: 50px;
+                border: 1px solid black;
+                }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div class="tab_1">
+    <h1> GeeksforGeeks</h1>
+    </div>
+
+    <table>
+        <caption class="tab_1"> Table with Colspan</caption>
+        <thead class="tab2">
+            <tr>  
+                <th colspan="2">Name</th>
+                <th> Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Alice</td>
+                <td>Brown</td>
+                <td>1</td>
+            </tr>
+            <tr> 
+                <td>Jane</td>
+                <td>Smith</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+<br>
+<br>
+<br>
+
+<table class="tab3">
+    <thead>
+        <tr>
+            <td colspan="3">Header</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">Sidebar</td>
+            <td>Item A</td>
+            <td>Item B</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Main Content</td>
+            <td>item C</td>
+        </tr>
+        <tr>
+            <td>Item D</td>
+        </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+            <td colspan="3"> Footer</td>
+    </tr>
+    </tfoot>
+
+</table>
+</body>
+</html>
