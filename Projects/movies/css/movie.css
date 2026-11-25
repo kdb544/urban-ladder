@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.page{
+    background-color: #0D2B3E;
+    font-family: 'Jost', sans-serif;
+}
+
+.hero {
+    height: 475px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5)  40%, rgba(0, 0, 0, 0.2)), url("../Images/ChatGPT\ Image\ Sep\ 6\,\ 2026\,\ 09_53_11\ AM\ edit.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    color: white;
+}
+
+
+/* .hero::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #00aeea;
+    opacity: 0.5;
+    max-width: 100%;
+    height: 475px;
+    margin-top: 56px;
+    
+} */
+
+.search-bar {
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.submit-button {
+    background-color: #FF6B4A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.rows {
+    padding: 30px 0 10px;
+}
+
+.movie-row {
+    margin-bottom: 30px;
+}
+
+.movie-row h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    margin: 0 0 15px 40px;
+}
+
+.row-wrapper {
+    position: relative;
+}
+
+.row-track {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 40px;
+    padding: 10px 40px;
+    scrollbar-width: none;
+}
+
+.row-track::-webkit-scrollbar {
+    display: none;
+}
+
+.row-track .movie-card {
+    flex: 0 0 160px;
+    min-width: 0;
+    scroll-snap-align: start;
+}
+
+.row-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    border: none;
+    background-color: rgba(13, 43, 62, 0.8);
+    color: white;
+    font-size: 36px;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.row-wrapper:hover .row-btn {
+    opacity: 1;
+}
+
+.row-btn.left {
+    left: 0;
+}
+
+.row-btn.right {
+    right: 0;
+}
+
+.tmdb-credit {
+    text-align: center;
+    color: #8aa;
+    font-size: 13px;
+    padding: 20px;
+}
+
+.tmdb-credit a {
+    color: #FF6B4A;
+}
+
+@media (hover: none) {
+    .row-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .submit-button {
+        margin: 10px 0 0;
+    }
+
+    .movie-row h2 {
+        margin-left: 15px;
+    }
+
+    .row-track {
+        padding: 10px 15px;
+        scroll-padding: 0 15px;
+    }
+
+    .row-track .movie-card {
+        flex-basis: 120px;
+    }
+}
