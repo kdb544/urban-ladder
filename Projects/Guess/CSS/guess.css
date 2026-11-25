@@ -1,0 +1,143 @@
+/* style/guess.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./../Image/photo-1689443111130-6e9c7dfd8f9e.avif);
+    background-color: #05030f;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    /* background: linear-gradient(135deg, #66ea9d 0%, #5b99cc 100%); */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#contentWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    margin-left: auto;
+
+
+}
+
+#gameWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;
+}
+
+h1 {
+    font-size: clamp(32px, 9vw, 45px);
+    max-width: 100%;
+}
+
+h2 {
+    font-size: clamp(18px, 5.4vw, 30px);
+    font-weight: 400;
+    opacity: 0.85;
+    margin-top: 1rem;
+}
+
+#guessInput {
+    width: 100%;
+    max-width: 360px;
+    padding: 16px;
+    font-size: 1.6rem;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 3rem;
+}
+
+#guessInput:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#actionRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 1.5rem;
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff5252;
+}
+
+#resetBtn {
+    background: #6c757d;
+}
+
+#resetBtn:hover {
+    background: #5a6268;
+}
+
+#tries {
+    margin-top: 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#result {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    min-height: 1.8rem;
+    line-height: 1.4;
+    max-width: 380px;
+}
+
+
+#leaderboard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: rgba(8, 4, 25, 0.846);
+    padding: 20px ;
+    border-radius: 15px;
+    min-width: min(350px, 90vw);
+}
+
+.hidden {
+    display: none;
+}
+
+#contentWrapper.leaderboard-open {
+    display: none;
+}
+
+#scoreList div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <link rel="stylesheet" href="./CSS/guess.css"> 
+    <script src="./JS/guess.js" defer></script> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+</head> 
+
+<body> 
+
+    <div id="contentWrapper"> 
+
+        <div id="gameWrapper"> 
+         
+            <h1>Guess the number</h1> 
+            <h2>Guess a number between 0 and 20</h2> 
+ 
+            <input type="number" id="guessInput"> 
+ 
+            <div id="actionRow"> 
+                <button onclick="checkGuess()">Check</button> 
+                <button id="resetBtn" onclick="resetGame()">Reset</button> 
+            </div> 
+ 
+            <div id="tries">Tries: 0</div> 
+ 
+            <div id="result"></div> 
+         
+            <button id="showLeaderboardBtn" onclick="toggleLeaderboard()">
+                Show Leaderboard
+            </button>
+
+        </div> 
+
+    </div>
+
+    <div id="leaderboard" class="hidden"> 
+
+        <h2>Leaderboard</h2> 
+ 
+        <div id="scoreList"></div> 
+ 
+        <button onclick="toggleLeaderboard()">Close</button> 
+
+    </div> 
+ 
+</body> 
+</html>
