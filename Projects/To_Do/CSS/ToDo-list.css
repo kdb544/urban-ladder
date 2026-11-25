@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #F7F7F7;
+    --textbox:#E5EFE9;
+    --buttons: #F1804D;
+    --check: #EFC6A4;
+    --list: #F7BDBD;
+    --notes: #F5A691;
+    --focus: #A6D6D3;
+    --remember: #5F7E7B;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: 'Jost', sans-serif;
+    padding: 20px 45px;
+}
+
+.head{
+    font-family: 'Jost';
+    text-align: center;
+    margin: 20px 0 25px;
+}
+
+.sub_head{
+    font-family: 'Jost';
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+.remSub_head{
+    font-family: 'Jost';
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.left{
+    flex-basis: 65%;
+    background-color: var(--textbox);
+    border-radius: 15px;
+    padding: 25px 20px;
+}
+
+.right{
+    flex-basis: 35%;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.textBox{
+    background-color:#FFFFFF;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 100px);
+    height: 40px;
+    padding: 0 12px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.addButton{
+    background-color: #D9826B;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.addButton:hover{
+    background-color: #C9725B;
+}
+
+.left .sub_head:nth-of-type(2){
+    margin-top: 25px;
+}
+
+ul>li{
+    text-decoration: underline white;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+}
+
+.list li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10PX 0;
+    padding: 5px 10px;
+    font-family: 'Jost';
+    font-size: 18px;
+}
+
+.list li input[type="checkbox"]{
+    width: 14px;
+    height: 14px;
+
+}
+
+
+.notes{
+    background-color: var(--notes);
+    flex:3;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+}
+
+.focus{
+    background-color: var(--focus);
+    flex:3;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+}
+
+.remember{
+    background-color: var(--remember);
+    flex: 2;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+}
+
+.notes textarea,
+.focus textarea {
+    width: 100%;
+    height: 70%;
+    resize: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Jost';
+    font-size: 16px;
+}
+
+.remInput {
+    width: 100%;
+    height: 60%;
+    resize: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Jost';
+    color: white;
+}
+
+
+.remember textarea::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.deleteButton{margin-left: auto;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.deleteButton:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+    body{
+        padding: 10px 15px;
+    }
+
+    .box{
+        flex-direction: column;
+    }
+
+    .right{
+        height: auto;
+    }
+
+    .notes,
+    .focus{
+        flex: none;
+        height: 200px;
+    }
+
+    .remember{
+        flex: none;
+        height: 150px;
+    }
+
+    .textBox{
+        width: 100%;
+    }
+
+    .addButton{
+        width: 100%;
+        margin: 10px 0 0;
+    }
+}
